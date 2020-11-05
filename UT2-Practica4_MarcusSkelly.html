@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        td{
+            width: 40%;
+        }
+        td.campos{
+            width: 55%;
+        }
+
+        .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  
+  .show {display:block;}
+    </style>
+</head>
+<body>
+    <h1>Web de Formulario</h1>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="get" target="_blank">
+        <table>
+            <tr>
+                <td>DNI:</td>
+                <td class="campos"><label for="DNI"></label><input id="DNI" type="text" maxlength="9" title="DNI del usuario" placeholder="Escriba sú DNI"/></td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                <td><input id="apellido" type="text" maxlength="30" title="apellido del usuario" placeholder="Escriba sú apellido"/></td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td><input id="nombre" type="text" maxlength="15" title="nombre del usuario" placeholder="Escriba sú nombre"/></td>
+            </tr>
+            <tr>
+                <td>Fecha de nacimiento:</td>
+                <td><input id="nacimiento" type="number" maxlength="8" title="fecha de nacimiento del usuario" placeholder="Escriba sú fecha de nacimiento"/></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input id="mail" type="mail" title="mail del usuario" placeholder="Escriba sú email"/></td>
+            </tr>
+            <tr>
+                <td>Introduzca contraseña:</td>
+                <td><input id="password" type="password" maxlength="10" title="contraseña del usuario" placeholder="Escriba sú contraseña"/></td>
+            </tr>
+            <tr>
+                <td>Introduzca su nacionalidad:</td>
+            </tr>
+        </table>
+            <p>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select name="nacionalidad" id="nacionalidad">
+            <option>Española</option>
+            <option>Inglesa</option>
+            <option>Francesa</option>
+            <option>Italiana</option>
+            </select> 
+            </p>
+                
+                
+            <h4>Escoja sexo</h4>
+            <input type="radio" name="size/">Hombre<br></br>
+            <input type="radio" name="size/">Mujer<br></br>
+            <h4>Escriba sus comentarios</h4>
+            <textarea id="comentarios" cols="50" rows="10"></textarea>
+            <p>
+                <input type="checkbox" name="info" id="info" checked="checked" /> <label for="info">Deseo recibir información en el email</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+        
+    </form>
+</body>
+
+</html>
