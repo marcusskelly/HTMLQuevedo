@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    }
+
+.boxed{
+    padding: 2em;
+    width: 20%;
+    margin: 2%;
+    border: 1px solid black;
+    height: 300px;
+    background-color: lightseagreen;
+    float: left;
+    text-align: center;
+}
