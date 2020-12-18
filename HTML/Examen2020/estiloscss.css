@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border-style: dashed;
+    border-width: 5px;
+    height: 100px;
+    display: grid;
+    background-image: url("img/Cabecera.jpg");
+    align-items: stretch;
+    grid-template-columns: 33% 33% 33%;
+    width:100%;
+}
+.header{
+    color: white;
+    text-align: center;
+}
+.autor{
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
+
+.element1{
+    text-align: center;
+}
+.element2{
+    align-self: center;
+    justify-self: center;
+}
+.element3{
+    align-self: right;
+    text-align: center;
+}
+.buscar{
+    color: white;
+}
+.navigator{
+    width:100%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.barra{
+    list-style-type: none;
+    background-color: cornflowerblue;
+    border-width: 1px;
+    border-style: solid;
+}
+li{
+    display: inline;
+    padding: 20px 80px;
+    margin-right: -4px;
+    
+}
+.section{
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    display: grid;
+    
+}
+.imagenSection{
+    text-align: center;
+    padding: 50px;
+    border-style: solid;
+    height: 400px;
+    margin: 25px;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(13, 26, 204);
+}
+.pie{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.img{
+    text-align: center;
+    padding: 50px;
+    margin: 25px;
+}
+.imagen{
+    text-align: left;
+    width: 80px;
+    height: 80px;
+}
+.imagen2{
+    width:100%;
+    height: 70%;
+    border-style: solid;
+}
+.nombre{
+    width:50%;
+    text-align: left;
+}
