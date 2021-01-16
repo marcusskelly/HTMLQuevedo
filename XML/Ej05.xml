@@ -1,0 +1,5 @@
+<?xml version = "1.0" encoding= "UTF-8"?>
+<bibliography>
+    <book author = "Tim Berners-Lee" title = "weaving the web" publisher ="Orion business" year ="1999"></book>
+    <standard title = "extensible markup language (xml) 1.0" organisation = "World wide web consortium" year = "1998"></standard>
+</bibliography>

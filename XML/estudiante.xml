@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding= "UTF-8"?>
+
+<!DOCTYPE estudiantes[
+    <!ELEMENT estudiantes (estudiante*)>
+    <!ELEMENT estudiante (nombre, direccion, id ,temas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT temas (tema*)>
+    <!ELEMENT tema (#PCDATA)>
+]>
+<estudiantes>
+    <estudiante>
+        <nombre>Marcus</nombre>
+        <direccion>Calle Sierra de Cadí</direccion>
+        <id>12345</id>
+        <temas>
+            <tema>Ciencias de IT</tema>
+            <tema>Matematicas</tema>
+        </temas>
+    </estudiante>
+</estudiantes>

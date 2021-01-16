@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding= "UTF-8"?>
+<book>
+<title>How to Bathe a Cat</title>
+<author>MerlinBauer</author>
+<list>
+    <title>The first list</title>
+    <item>An item</item>
+    <item>An item</item>
+    <item>Another item</item>
+</list>
+<paragraph>Bathing a cat is a <emph>relatively</emph> easy task as long as
+the cat is willing.</paragraph>
+<title>How to Bathe a Cat</title>
+<author>MerlinBauer</author>
+</book>

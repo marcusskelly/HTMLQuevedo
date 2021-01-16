@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding= "UTF-8"?>
+
+<procedure>
+    <title>How to Bathe a Cat</title>
+    <overview>This procedure
+tells you how to bathe a cat.
+</overview>
+<warning>Cats don't like to
+take baths. You could get hurt doing this. Be sure to obtain all the
+required protective gear before you start.
+</warning>
+<equipment>
+    <item>Hockey Mask </item>
+    <item>Padded Full-body</item>
+    <item>Kevlar Armor</item>
+    <item>Tub full of warm water</item>
+    <item>Towels</item>
+    <item>First Aid kit</item>
+    <item>Cat Shampoo</item>
+</equipment>
+<instructions> 
+    <step> Locate the cat, who by now is
+    hiding under the bed.</step>
+    <step>Place the cat in the tub of
+    water.</step> 
+    <step>Using the First Aid kit, repair the damage to
+    your head and arms.</step>
+    <step>Place the cat back in the tub and
+    hold it down.</step>
+    <step>Wash it really fast, then make an effort
+    to dry it with the towels.</step>
+    <step>Decide not to do this again.
+    </step>
+</instructions>
+</procedure>
