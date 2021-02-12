@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE autor  [
+<!ELEMENT autor (titulo,capitulo+)>
+<!ATTLIST autor libro NMTOKEN #IMPLIED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulo (#PCDATA)>
+<!ATTLIST capitulo numero CDATA #IMPLIED>
+]>
+
+<autor libro ="anónimo">
+    <titulo>libro de ejemplo</titulo>
+    <capitulo numero="1">Escriba aquí el contenido del capítulo 1.</capitulo>
+    <capitulo numero="2">Escriba aquí el contenido del capítulo 2.</capitulo>
+</autor>
