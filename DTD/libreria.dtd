@@ -1,0 +1,12 @@
+<!ELEMENT libreria (libros,categoria)>
+    <!ELEMENT libros (producto*)>
+        <!ATTLIST producto cat ID #REQUIRED>
+        <!ELEMENT producto (titulo,autor,precio,cantidad)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT categoria (categoria*)>
+        <!ATTLIST categoria desc NMTOKENS #REQUIRED>
+        <!ATTLIST categoria code IDREFS #REQUIRED>
+        <!ATTLIST categoria nota NMTOKENS #IMPLIED>
