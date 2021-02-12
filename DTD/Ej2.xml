@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE comunidad  [
+<!ELEMENT comunidad (vecino*)>
+<!ELEMENT vecino (codigo_vecino,nombre,apellidos,portal,piso,cuenta_corriente,cargo)>
+<!ELEMENT codigo_vecino (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT portal (#PCDATA)>
+<!ELEMENT piso (#PCDATA)>
+<!ATTLIST piso letra NMTOKEN #IMPLIED> 
+<!ELEMENT cuenta_corriente (#PCDATA)>
+<!ELEMENT cargo (#PCDATA)>
+]>
+<comunidad>
+    <vecino>
+        <codigo_vecino></codigo_vecino>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <portal></portal>
+        <piso letra = "x"></piso>
+        <cuenta_corriente></cuenta_corriente>
+        <cargo></cargo>
+    </vecino>
+</comunidad>

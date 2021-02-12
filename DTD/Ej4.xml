@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro,usuario,prestamo)>
+<!ELEMENT libro (isbn,titulo,autor)>
+<!ATTLIST libro cod CDATA #IMPLIED>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT usuario (nombre,apellido)>
+<!ATTLIST usuario matricula CDATA #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT prestamo (fechaIni,fechaFin)>
+<!ATTLIST prestamo libro CDATA #IMPLIED>
+<!ATTLIST prestamo usuario CDATA #IMPLIED>
+<!ELEMENT fechaIni (#PCDATA)>
+<!ELEMENT fechaFin (#PCDATA)>
+
+]>
+
+<biblioteca>
+    <libro cod="M1">
+        <isbn>987876</isbn>
+        <titulo>el capitan groe</titulo>
+        <autor> Alicia First</autor>
+    </libro>
+    <usuario matricula="L878">
+        <nombre>Antonio</nombre>
+        <apellido>Penna</apellido>
+    </usuario>
+    <prestamo libro="M1" usuario="L878">
+        <fechaIni>Pepe</fechaIni>
+        <fechaFin>Cordero</fechaFin>
+    </prestamo>
+</biblioteca>
