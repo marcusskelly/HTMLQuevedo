@@ -1,0 +1,10 @@
+<!ELEMENT tarjetavisita (apellido,nombre,profesion,direccion)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT profesion (#PCDATA)>
+    <!ELEMENT direccion (numero,calle,codigopostal,poblacion)>
+        <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT calle (#PCDATA)>
+            <!ENTITY cstrb "Calle San Petersburgo">
+        <!ELEMENT codigopostal (#PCDATA)>
+        <!ELEMENT poblacion (#PCDATA)>

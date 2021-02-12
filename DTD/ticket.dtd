@@ -1,0 +1,12 @@
+<!ELEMENT ticket (datos_ticket)>
+    <!ATTLIST ticket código ID #REQUIRED>
+    <!ELEMENT datos_ticket (fecha,hora,precio_total,forma_pago,cliente)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT hora (#PCDATA)>
+        <!ELEMENT precio_total (cantidad_sin_iva+)>
+        <!ATTLIST precio_total moneda NMTOKEN #REQUIRED>
+        <!ELEMENT cantidad_sin_iva (#PCDATA)>
+        <!ELEMENT forma_pago (#PCDATA)>
+            <!ATTLIST forma_pago número CDATA #REQUIRED>
+            <!ATTLIST forma_pago tipo NMTOKENS #REQUIRED>
+        <!ELEMENT cliente (#PCDATA)>
