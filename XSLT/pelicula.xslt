@@ -21,3 +21,41 @@
 
 
 </xsl:stylesheet>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+    <xsl:template match="/"> //Mismo mecanismo que ies
+        <hitchcock>
+            <xsl:apply-templates />
+        </hitchcock>
+    </xsl:template>
+
+    <xsl:template match="estudios">
+    </xsl:template>
+
+
+    <xsl:template match="actores"> //Cabecera para actores
+        <actores>
+            <xsl:apply-templates />
+        </actores>
+    </xsl:template>
+
+    <xsl:template match="actor">
+            <actor><nombre><xsl:value-of select="@nombre"></xsl:value-of></nombre></actor>
+        <xsl:apply-templates />
+    </xsl:template>
+
+    <xsl:template match="peliculas"> //Cabecera para peliculas
+        <peliculas>
+            <xsl:apply-templates />
+        </peliculas>
+    </xsl:template>
+
+    <xsl:template match="pelicula">
+            <pelicula><xsl:attribute name="titulo"><xsl:value-of select="titulo"></xsl:value-of></xsl:attribute></pelicula>
+    </xsl:template>
+
+
+
+</xsl:stylesheet>
